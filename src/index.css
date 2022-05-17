@@ -20,10 +20,14 @@ code {
 .theme-light {
   --color-primary: #111111;
   --color-secondary: #F4F4F4;
+  background-color: var(--color-secondary);
+  transition: background-color linear 0.2s;
 }
 .theme-dark {
   --color-primary: #F4F4F4;
   --color-secondary: #111111;
+  background-color: var(--color-secondary);
+  transition: background-color linear 0.2s;
 }
 
 .text {
