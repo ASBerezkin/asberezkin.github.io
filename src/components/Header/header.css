@@ -1,0 +1,36 @@
+.header__photo {
+    width: 100%;
+    max-width: 136px;
+}
+.header__contact {
+    margin-left: auto;
+}
+
+.header__switcherWrapper {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.header__description {
+    margin-top: auto;
+    margin-left: auto;
+    max-width: 248px;
+}
+
+.header__column {
+    display: flex;
+    flex-direction: column;
+}
+
+.header__logo {
+    text-decoration: underline;
+}
+
+@media screen and (min-width: 1024px) {
+    .header__photo {
+        max-width: 280px;
+        margin-top: auto;
+        margin-left: auto;
+    }
+}
