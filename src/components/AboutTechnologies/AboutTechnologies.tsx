@@ -1,5 +1,5 @@
 import "./aboutTechnologies.css";
-import { badges } from "./badges";
+import { badges } from "./constants";
 
 export const AboutTechnologies = () => {
   return (

@@ -1,24 +1,47 @@
 .technologies {
     grid-column-end: span 2;
-    margin-top: auto;
+    grid-row: 3 / 3;
+    margin-top: 16px;
+}
+@media screen and (min-width: 1024px) {
+    .technologies {
+        margin-top: auto;
+        grid-row: 2/2;
+    }
 }
 
 .technologies__subheader {
     margin: 0;
 }
+
 .technologies__header {
-    margin: 32px 0 0;
+    margin: 0;
     font-weight: 400;
+}
+
+@media screen and (min-width: 1024px) {
+    .technologies__header {
+        margin: 32px 0 0;
+    }
 }
 
 .badges {
     display: flex;
     flex-wrap: wrap;
     gap: 8px 12px;
-    grid-column-end: 5;
     align-items: flex-end;
     justify-content: flex-start;
-    margin-top: auto;
+    align-self: flex-start;
+    grid-row: 4 / 4;
+    grid-column-end: span 2;
+}
+
+@media screen and (min-width: 1024px) {
+    .badges {
+        grid-column-end: 5;
+        margin-top: auto;
+        grid-row: 2/2;
+    }
 }
 .badges__item {
     padding: 6px 16px;
