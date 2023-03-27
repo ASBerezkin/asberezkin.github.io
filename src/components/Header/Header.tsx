@@ -1,3 +1,4 @@
+import React from 'react'
 import "./header.css";
 import Clock from "react-live-clock";
 import { Switcher } from "../Switcher/Switcher";

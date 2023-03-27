@@ -1,3 +1,4 @@
+import React from 'react'
 import "./aboutTechnologies.css";
 import { badges } from "./constants";
 

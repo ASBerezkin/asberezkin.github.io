@@ -1,9 +1,11 @@
+import React from "react";
 import "./normalize.css";
 import "./index.css";
 import { Grid } from "./components/Grid/Grid";
 import { Header } from "./components/Header/Header";
 import { AboutTechnologies } from "./components/AboutTechnologies/AboutTechnologies";
 import { createContext, useState, Dispatch, SetStateAction } from "react";
+import { ContactBtn } from "./components/ContactBtn/ContactBtn";
 
 export const ThemeContext = createContext<{
   theme: string;
@@ -19,6 +21,7 @@ function App() {
         <Grid>
           <Header />
           <AboutTechnologies />
+          <ContactBtn />
         </Grid>
       </div>
     </ThemeContext.Provider>
