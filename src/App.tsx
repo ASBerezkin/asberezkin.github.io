@@ -1,25 +1,30 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import "./normalize.css";
+import "./index.css";
+import { Grid } from "./components/Grid/Grid";
+import { Header } from "./components/Header/Header";
+import { AboutTechnologies } from "./components/AboutTechnologies/AboutTechnologies";
+import { createContext, useState, Dispatch, SetStateAction } from "react";
+import { ContactBtn } from "./components/ContactBtn/ContactBtn";
+
+export const ThemeContext = createContext<{
+  theme: string;
+  setTheme: Dispatch<SetStateAction<string>>;
+}>({ theme: "light", setTheme: () => undefined });
 
 function App() {
+  const [theme, setTheme] = useState("light");
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <ThemeContext.Provider value={{ theme, setTheme }}>
+      <div className={`App theme-${theme}`}>
+        <Grid>
+          <Header />
+          <AboutTechnologies />
+          <ContactBtn />
+        </Grid>
+      </div>
+    </ThemeContext.Provider>
   );
 }
 

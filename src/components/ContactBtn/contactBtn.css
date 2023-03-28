@@ -1,0 +1,213 @@
+.contactBtn__wrapper {
+  display: none;
+  position: relative;
+  width: 196px;
+  height: 196px;
+  grid-row: 3/3;
+  grid-column-end: 4;
+  margin-top: 24px;
+}
+
+@media screen and (min-width: 1024px) {
+  .contactBtn__wrapper {
+    display: flex;
+  }
+}
+
+.contactBtn__arrow {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  color: var(--color-primary);
+}
+
+.contactBtn {
+  position: relative;
+  width: 196px;
+  height: 196px;
+  border-radius: 50%;
+  animation: rotateCircle infinite linear 30s;
+}
+
+.contactBtn__letter {
+  position: absolute;
+  left: 50%;
+  width: 0;
+  color: var(--color-primary);
+}
+
+.contactBtn__letter:nth-child(-n + 53) {
+  bottom: 50%; /* отступ от центра по радиусу */
+  transform-origin: 0 100%;
+  padding-bottom: 50%; /* отступ от центра круга */
+}
+
+.contactBtn__letter:nth-child(1) {
+  transform: rotate(345deg);
+}
+.contactBtn__letter:nth-child(2) {
+  transform: rotate(351deg);
+}
+.contactBtn__letter:nth-child(3) {
+  transform: rotate(357deg);
+}
+.contactBtn__letter:nth-child(4) {
+  transform: rotate(3deg);
+}
+.contactBtn__letter:nth-child(5) {
+  transform: rotate(9deg);
+}
+.contactBtn__letter:nth-child(6) {
+  transform: rotate(15deg);
+}
+.contactBtn__letter:nth-child(7) {
+  transform: rotate(21deg);
+}
+.contactBtn__letter:nth-child(8) {
+  transform: rotate(27deg);
+}
+.contactBtn__letter:nth-child(9) {
+  transform: rotate(33deg);
+}
+.contactBtn__letter:nth-child(10) {
+  transform: rotate(39deg);
+}
+.contactBtn__letter:nth-child(11) {
+  transform: rotate(45deg);
+}
+.contactBtn__letter:nth-child(12) {
+  transform: rotate(51deg);
+}
+.contactBtn__letter:nth-child(13) {
+  transform: rotate(57deg);
+}
+.contactBtn__letter:nth-child(14) {
+  transform: rotate(63deg);
+}
+.contactBtn__letter:nth-child(15) {
+  transform: rotate(69deg);
+}
+.contactBtn__letter:nth-child(16) {
+  transform: rotate(75deg);
+}
+.contactBtn__letter:nth-child(17) {
+  transform: rotate(81deg);
+}
+.contactBtn__letter:nth-child(18) {
+  transform: rotate(87deg);
+}
+.contactBtn__letter:nth-child(19) {
+  transform: rotate(93deg);
+}
+.contactBtn__letter:nth-child(20) {
+  transform: rotate(99deg);
+}
+.contactBtn__letter:nth-child(21) {
+  transform: rotate(105deg);
+}
+.contactBtn__letter:nth-child(22) {
+  transform: rotate(111deg);
+}
+.contactBtn__letter:nth-child(23) {
+  transform: rotate(117deg);
+}
+.contactBtn__letter:nth-child(24) {
+  transform: rotate(123deg);
+}
+.contactBtn__letter:nth-child(25) {
+  transform: rotate(129deg);
+}
+.contactBtn__letter:nth-child(26) {
+  transform: rotate(135deg);
+}
+.contactBtn__letter:nth-child(27) {
+  transform: rotate(141deg);
+}
+.contactBtn__letter:nth-child(28) {
+  transform: rotate(147deg);
+}
+.contactBtn__letter:nth-child(29) {
+  transform: rotate(153deg);
+}
+.contactBtn__letter:nth-child(30) {
+  transform: rotate(159deg);
+}
+.contactBtn__letter:nth-child(31) {
+  transform: rotate(165deg);
+}
+.contactBtn__letter:nth-child(32) {
+  transform: rotate(171deg);
+}
+.contactBtn__letter:nth-child(33) {
+  transform: rotate(177deg);
+}
+.contactBtn__letter:nth-child(34) {
+  transform: rotate(183deg);
+}
+.contactBtn__letter:nth-child(35) {
+  transform: rotate(189deg);
+}
+.contactBtn__letter:nth-child(36) {
+  transform: rotate(195deg);
+}
+.contactBtn__letter:nth-child(37) {
+  transform: rotate(201deg);
+}
+.contactBtn__letter:nth-child(38) {
+  transform: rotate(207deg);
+}
+.contactBtn__letter:nth-child(39) {
+  transform: rotate(213deg);
+}
+.contactBtn__letter:nth-child(40) {
+  transform: rotate(219deg);
+}
+.contactBtn__letter:nth-child(41) {
+  transform: rotate(225deg);
+}
+.contactBtn__letter:nth-child(42) {
+  transform: rotate(231deg);
+}
+.contactBtn__letter:nth-child(43) {
+  transform: rotate(237deg);
+}
+.contactBtn__letter:nth-child(44) {
+  transform: rotate(243deg);
+}
+.contactBtn__letter:nth-child(45) {
+  transform: rotate(249deg);
+}
+.contactBtn__letter:nth-child(46) {
+  transform: rotate(255deg);
+}
+.contactBtn__letter:nth-child(47) {
+  transform: rotate(261deg);
+}
+.contactBtn__letter:nth-child(48) {
+  transform: rotate(267deg);
+}
+.contactBtn__letter:nth-child(49) {
+  transform: rotate(273deg);
+}
+.contactBtn__letter:nth-child(50) {
+  transform: rotate(279deg);
+}
+.contactBtn__letter:nth-child(51) {
+  transform: rotate(285deg);
+}
+.contactBtn__letter:nth-child(52) {
+  transform: rotate(291deg);
+}
+.contactBtn__letter:nth-child(53) {
+  transform: rotate(297deg);
+}
+
+@keyframes rotateCircle {
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
