@@ -44,8 +44,8 @@
       "last 1 safari version"
     ]
   },
-  "homepage": "https://asberezkin.github.io/",
   "devDependencies": {
     "serve": "^14.2.0"
-  }
+  },
+  "homepage": "https://asberezkin.github.io/"
 }

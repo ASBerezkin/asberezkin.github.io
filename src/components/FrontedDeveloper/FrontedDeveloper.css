@@ -1,0 +1,36 @@
+.frontedDeveloper__wrapper {
+    grid-row: 5/5;
+    grid-column-end: span 4;
+    overflow: hidden;
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 24px;
+    width: 100%;
+}
+
+@media screen and (min-width: 1024px) {
+    .frontedDeveloper__wrapper {
+        grid-row: 4/4;
+        margin-top: -56px;
+    }
+}
+
+.frontedDeveloper {
+    white-space: nowrap;
+    text-transform: uppercase;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: var(--color-primary);
+    -webkit-text-fill-color: transparent;
+    animation: scroll infinite 10s linear;
+    display: inline-block;
+    padding-left: 100%;
+}
+
+@keyframes scroll {
+    0% {
+        transform: translate(0, 0);
+    }
+    100% {
+        transform: translate(-100%, 0)
+    }
+}

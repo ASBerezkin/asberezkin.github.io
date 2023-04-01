@@ -6,6 +6,7 @@ import { Header } from "./components/Header/Header";
 import { AboutTechnologies } from "./components/AboutTechnologies/AboutTechnologies";
 import { createContext, useState, Dispatch, SetStateAction } from "react";
 import { ContactBtn } from "./components/ContactBtn/ContactBtn";
+import {FrontedDeveloper} from "./components/FrontedDeveloper/FrontedDeveloper";
 
 export const ThemeContext = createContext<{
   theme: string;
@@ -22,6 +23,7 @@ function App() {
           <Header />
           <AboutTechnologies />
           <ContactBtn />
+          <FrontedDeveloper />
         </Grid>
       </div>
     </ThemeContext.Provider>
