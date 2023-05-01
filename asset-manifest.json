@@ -1,19 +1,23 @@
 {
   "files": {
-    "main.css": "/static/css/main.a95223b8.css",
-    "main.js": "/static/js/main.c9351134.js",
+    "main.css": "/static/css/main.656b031b.css",
+    "main.js": "/static/js/main.84e3b495.js",
     "static/js/787.8a8741f2.chunk.js": "/static/js/787.8a8741f2.chunk.js",
     "static/media/photo.png": "/static/media/photo.50fc7a829a02be32105f.png",
+    "static/media/sber-logo.png": "/static/media/sber-logo.8dce93b7d9f180ee9c4c.png",
+    "static/media/kodix-logo.png": "/static/media/kodix-logo.870fd651b1de753e4318.png",
+    "static/media/mtsbank-logo.jpeg": "/static/media/mtsbank-logo.526bbdf3b2d7f81c2afb.jpeg",
     "static/media/sun.svg": "/static/media/sun.9967c2f090bec2092bad.svg",
+    "static/media/amazingHiring-logo.svg": "/static/media/amazingHiring-logo.3d4253dba91794437ef2c4c0ae01a591.svg",
     "static/media/moon.svg": "/static/media/moon.8934e02221e34ed2529e.svg",
     "index.html": "/index.html",
     "static/media/contactArrow.svg": "/static/media/contactArrow.ecdffae45f5450f3fb9ef9a2ab866ab8.svg",
-    "main.a95223b8.css.map": "/static/css/main.a95223b8.css.map",
-    "main.c9351134.js.map": "/static/js/main.c9351134.js.map",
+    "main.656b031b.css.map": "/static/css/main.656b031b.css.map",
+    "main.84e3b495.js.map": "/static/js/main.84e3b495.js.map",
     "787.8a8741f2.chunk.js.map": "/static/js/787.8a8741f2.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.a95223b8.css",
-    "static/js/main.c9351134.js"
+    "static/css/main.656b031b.css",
+    "static/js/main.84e3b495.js"
   ]
 }
