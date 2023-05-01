@@ -1,20 +1,22 @@
-import React from "react";
-import "./normalize.css";
-import "./index.css";
-import { Grid } from "./components/Grid/Grid";
-import { Header } from "./components/Header/Header";
-import { AboutTechnologies } from "./components/AboutTechnologies/AboutTechnologies";
-import { createContext, useState, Dispatch, SetStateAction } from "react";
-import { ContactBtn } from "./components/ContactBtn/ContactBtn";
-import {FrontedDeveloper} from "./components/FrontedDeveloper/FrontedDeveloper";
+import React, { createContext, Dispatch, SetStateAction, useState } from 'react';
+
+import { AboutTechnologies } from './components/AboutTechnologies/AboutTechnologies';
+import { ContactBtn } from './components/ContactBtn/ContactBtn';
+import { Experience } from './components/Experience/Experience';
+import { FrontedDeveloper } from './components/FrontedDeveloper/FrontedDeveloper';
+import { Grid } from './components/Grid/Grid';
+import { Header } from './components/Header/Header';
+
+import './normalize.css';
+import './index.css';
 
 export const ThemeContext = createContext<{
   theme: string;
   setTheme: Dispatch<SetStateAction<string>>;
-}>({ theme: "light", setTheme: () => undefined });
+}>({ theme: 'light', setTheme: () => undefined });
 
 function App() {
-  const [theme, setTheme] = useState("light");
+  const [theme, setTheme] = useState('light');
 
   return (
     <ThemeContext.Provider value={{ theme, setTheme }}>
@@ -24,6 +26,7 @@ function App() {
           <AboutTechnologies />
           <ContactBtn />
           <FrontedDeveloper />
+          <Experience />
         </Grid>
       </div>
     </ThemeContext.Provider>

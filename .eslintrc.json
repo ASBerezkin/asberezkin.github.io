@@ -1,0 +1,28 @@
+{
+  "plugins": ["@typescript-eslint", "simple-import-sort"],
+  "extends": [
+    "plugin:@typescript-eslint/recommended",
+    "prettier"
+  ],
+  "rules": {
+    "@typescript-eslint/no-unused-vars": "error",
+    "simple-import-sort/exports": "error",
+    "simple-import-sort/imports": [
+      "error",
+      {
+        "groups": [
+          ["react", "^next", "^@?[a-zA-z]"],
+          [
+            "^public/?",
+            "^types",
+            "^lib/?",
+            "^components/?",
+            "^components/.*\\.(scss|sass|less)$",
+            "^\\.\\./?$", // Imports starting with `../`
+            "^\\.(?!/?$)", "(scss|sass|less)$" // Imports starting with `./`
+          ]
+        ]
+      }
+    ]
+  }
+}

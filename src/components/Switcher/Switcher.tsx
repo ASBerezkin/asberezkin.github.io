@@ -1,6 +1,8 @@
-import React, { FC, useContext, useState } from "react";
-import "./switcher.css";
-import { ThemeContext } from "../../App";
+import React, { FC, useContext, useState } from 'react';
+
+import { ThemeContext } from '../../App';
+
+import './switcher.css';
 
 export const Switcher: FC = () => {
   const [checked, setChecked] = useState(false);
@@ -8,7 +10,7 @@ export const Switcher: FC = () => {
 
   const handleChange = () => {
     setChecked((prevState) => !prevState);
-    setTheme((prevState) => (prevState === "light" ? "dark" : "light"));
+    setTheme((prevState) => (prevState === 'light' ? 'dark' : 'light'));
   };
 
   return (

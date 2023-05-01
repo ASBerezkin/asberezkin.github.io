@@ -1,14 +1,16 @@
-import React, { FC } from "react";
-import "./contactBtn.css";
-import { ReactComponent as Arrow } from "../../assets/contactArrow.svg";
+import React, { FC } from 'react';
+
+import { ReactComponent as Arrow } from '../../assets/contactArrow.svg';
+
+import './contactBtn.css';
 
 export const ContactBtn: FC = () => {
   return (
     <div className="contactBtn__wrapper">
       <div className="contactBtn">
-        {"Связаться со мной "
+        {'Связаться со мной '
           .repeat(3)
-          .split("")
+          .split('')
           .map((letter, i) => (
             <span className="contactBtn__letter" key={`${i}-${letter}`}>
               {letter}

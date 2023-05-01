@@ -1,6 +1,6 @@
 .frontedDeveloper__wrapper {
     grid-row: 5/5;
-    grid-column-end: span 4;
+    grid-column-end: span 2;
     overflow: hidden;
     display: flex;
     flex-wrap: nowrap;
@@ -11,6 +11,7 @@
 @media screen and (min-width: 1024px) {
     .frontedDeveloper__wrapper {
         grid-row: 4/4;
+        grid-column-end: span 4;
         margin-top: -56px;
     }
 }

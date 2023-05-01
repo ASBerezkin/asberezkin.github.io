@@ -1,5 +1,6 @@
-import React, { FC } from "react";
-import "./grid.css";
+import React, { FC } from 'react';
+
+import './grid.css';
 
 type TGridProps = {
   children?: React.ReactNode;

@@ -1,9 +1,15 @@
-import "./header.css";
-import Clock from "react-live-clock";
-import { Switcher } from "../Switcher/Switcher";
-import photo from "../../assets/photo.png";
+import Clock from 'react-live-clock';
+
+import photo from '../../assets/photo.png';
+import { Switcher } from '../Switcher/Switcher';
+
+import './header.css';
 
 export const Header = () => {
+  const dateNow = new Date();
+  const birthDateYear = dateNow.getFullYear() - new Date(1994, 5, 9).getFullYear();
+  const experienceDevelopment = dateNow.getFullYear() - 2018;
+
   return (
     <>
       <span className="text text__size-m header__logo">A.Berёzkin</span>
@@ -16,7 +22,7 @@ export const Header = () => {
           <Switcher />
         </div>
         <p className="header__description text text__size-s">
-          27 лет, из которых 4 года — работа разработчиком
+          {birthDateYear} лет, из которых {experienceDevelopment} лет — работа разработчиком
         </p>
       </div>
       <span className="header__contact text text__size-m">Связаться</span>
